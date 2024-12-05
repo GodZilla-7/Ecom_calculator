@@ -1,0 +1,250 @@
+* {
+    font-family: Parkinsans, serif;
+    transition: ease-out .3s;
+  }
+
+  li {
+    border-radius: 10px;
+    background-color: rgb(244, 244, 244);
+    margin-right: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  li:hover {
+    background-color: rgb(207, 207, 207);
+    transition-duration: 0.25s;
+    transform: scale(1.07);
+  }
+
+  button:active {
+    transition-duration: 0.25s;
+    transform: scale(1.07);
+  }
+
+  .calculator-container {
+    width: 40vw;
+    margin: 50px auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+  }
+
+  .tabs {
+    display: flex;
+    border-bottom: 2px solid #ddd;
+  }
+
+  .tab {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .tab.active {
+    border-bottom: 3px solid rgb(255, 255, 255);
+    background-color: #2e7d5a;
+    border-radius: 10px 10px 0px 0px;
+    color: white;
+  }
+
+  .toggle-buttons {
+    display: flex;
+    justify-content: start;
+    margin: 15px 0;
+  }
+
+  .toggle-buttons button {
+    padding: 8px 16px;
+    margin-right: 10px;
+    border: 1px solid #f3f2f2;
+    border-radius: 20px;
+    background: #f4f4f4;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .emailbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 120px;
+    margin-bottom: 30px;
+    flex-direction: column;
+    font-size: larger;
+    color: rgb(111, 108, 148);
+    font-weight: 300;
+  }
+
+  .toggle-buttons button.active {
+    background: rgb(58, 134, 105);
+    color: white;
+  }
+
+  .tab-content {
+    display: none;
+  }
+
+  .tab-content.active {
+    display: block;
+  }
+
+  input:focus {
+    outline: none; 
+  }
+
+  .entry {
+    margin: 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: transparent;
+    padding: 10px;
+  }
+  .symbols{
+    margin: 0%;
+    margin-right: 10px;
+  }
+  .symbol{
+    margin: 0%;
+    margin-left: 10px;
+  }
+
+  .entry input {
+    width: 100%;
+    padding: 10px;
+    border-style: none;
+  }
+
+  .submit-btn {
+    background-color: rgb(58, 134, 105);
+    border-style: none;
+    border-radius: 25px;
+    font-size: small;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 6%;
+    padding-right: 6%;
+    margin-top: 3%;
+    color: white;
+  }
+
+  .fb-inputs,
+  .flat-inputs {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sub {
+    display: flex;
+  }
+
+  .hero {
+    margin-top: -15px;
+    flex-direction: row-reverse;
+    padding: 0%;
+
+  }
+
+  .submitt {
+    background-color: rgb(58, 134, 105);
+    border-style: none;
+    border-radius: 25px;
+    font-size: small;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+
+  .send-email {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 50px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    width: 700px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #dcdcdc;
+  }
+
+  .subbutton {
+    background-color: #2e7d5a;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .linkss {
+    display: flex;
+    flex-direction: row;
+    gap: 120px;
+  }
+  .modal-body{
+    display: flex;
+    flex-direction: column-reverse;
+    text-decoration: double;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+    font-weight: 600;
+  }
+
+
+  @media (max-width: 1000px) {
+    .hero {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    .calculator-container {
+      width: 80vw;
+    }
+
+    .txt {
+      width: 80vw;
+    }
+
+    .submitt {
+      display: none;
+    }
+
+    .emailbox {
+      width: 80vw;
+    }
+
+    .send-email {
+      width: 80vw;
+      display: flex;
+      flex-direction: column;
+
+    }
+
+    .subbutton {
+      margin-top: 30px;
+      border-radius: 0px 0px 40px 40px;
+      width: 75vw;
+    }
+
+    .linkss {
+      display: none;
+    }
+
+    footer {
+      margin-left: 15vw;
+    }
+  }
