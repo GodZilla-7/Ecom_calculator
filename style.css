@@ -216,12 +216,6 @@
 
 
   @media (max-width: 1000px) {
-    header{
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-    }
     .hero {
       display: flex;
       flex-direction: column-reverse;
@@ -235,17 +229,13 @@
     }
 
     .txt {
-      width: 80vw;
+      width: 85vw;
     }
 
-    .xyz {
+    .xyz, .submitt {
       display: none;
     }
-    .submitt {
-      margin-left: 20vw;
-      margin-right: 5vw;
-      width: 70px;
-    }
+
 
     .emailbox {
       width: 80vw;
