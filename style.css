@@ -3,6 +3,7 @@
     transition: ease-in-out .15s;
   }
 
+
   .navv li {
     border-radius: 10px;
     background-color: rgb(244, 244, 244);
@@ -14,13 +15,8 @@
   .navv li:hover {
     background-color: rgb(207, 207, 207);
     transition-duration: 0.25s;
-    transform: scale(1.07);
   }
 
-  button:active {
-    transition-duration: 0.25s;
-    transform: scale(1.07);
-  }
 
   .calculator-container {
     width: 40vw;
@@ -96,7 +92,7 @@
   }
 
   .entry {
-    margin: 10px 10px;
+    margin: 12px 12px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -153,7 +149,8 @@
   }
 
   .sub {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
   .hero {
@@ -216,6 +213,16 @@
 
 
   @media (max-width: 1000px) {
+    input{
+      font-size: x-small;
+    }
+
+    header{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
     .hero {
       display: flex;
       flex-direction: column-reverse;
@@ -223,20 +230,25 @@
       align-items: start;
 
     }
+    .hhh{
+      margin: 0%;
+    }
 
     .calculator-container {
       width: 90vw;
     }
 
     .txt {
-      width: 75vw;
-        padding-left: 10px;
+      width: 80vw;
     }
 
-    .xyz, .submitt {
+    .xyz {
       display: none;
     }
-
+    .submitt {
+      margin-left: 50px;
+      width: 70px;
+    }
 
     .emailbox {
       width: 80vw;
@@ -246,13 +258,15 @@
       width: 80vw;
       display: flex;
       flex-direction: column;
-
+    
     }
 
     .subbutton {
       margin-top: 30px;
       border-radius: 0px 0px 40px 40px;
-      width: 75vw;
+      width: 80vw;
+      bottom: 0%;
+      margin-bottom: -10px;
     }
 
     .linkss {
@@ -263,6 +277,11 @@
       margin-left: 15vw;
     }
   }
+
+
+
+
+
 
 
 
