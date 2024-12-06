@@ -90,7 +90,7 @@
             </div>
 
             <button type="submit" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="submit-btn" id="sp-calculate-btn">Calculate</button>
-
+            <button class="reset-btn" onclick="resetFieldssp()">Reset</button>
           </div>
 
           <!-- Break Even Calculator -->
@@ -128,6 +128,7 @@
             </div>
             <button type="submit" data-bs-toggle="modal" data-bs-target="#staticBackdrop" class="submit-btn"
               id="be-calculate-btn">Calculate</button>
+              <button class="reset-btn" onclick="resetFieldsbe()">Reset</button>
           </div>
         </div>
       </div>
@@ -298,9 +299,44 @@
   </div>
 
 
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
     <script src="script.js"></script>
+
+
+<script>
+  function resetFieldssp() {
+    document.getElementById("sp-fb-input1").value = ""; 
+    document.getElementById("sp-fb-input2").value = ""; 
+    document.getElementById("sp-fb-input3").value = ""; 
+    document.getElementById("sp-fb-input4").value = ""; 
+    document.getElementById("sp-fb-input5").value = ""; 
+    document.getElementById("sp-fb-input6").value = ""; 
+    document.getElementById("sp-fb-input7").value = ""; 
+    document.getElementById("sp-flat-input1").value = ""; 
+    document.getElementById("sp-flat-input2").value = ""; 
+    document.getElementById("sp-flat-input3").value = ""; 
+    document.getElementById("sp-flat-input4").value = ""; 
+    document.getElementById("sp-flat-input5").value = ""; 
+    document.getElementById("sp-flat-input6").value = ""; 
+  }
+  function resetFieldsbe() {
+    document.getElementById("be-fb-input1").value = ""; 
+    document.getElementById("be-fb-input2").value = ""; 
+    document.getElementById("be-fb-input3").value = ""; 
+    document.getElementById("be-fb-input4").value = ""; 
+    document.getElementById("be-fb-input5").value = ""; 
+    document.getElementById("be-fb-input6").value = ""; 
+    document.getElementById("be-fb-input7").value = ""; 
+    document.getElementById("be-flat-input1").value = ""; 
+    document.getElementById("be-flat-input2").value = ""; 
+    document.getElementById("be-flat-input3").value = ""; 
+    document.getElementById("be-flat-input4").value = ""; 
+    document.getElementById("be-flat-input5").value = ""; 
+    document.getElementById("be-flat-input6").value = ""; 
+  }
+</script>
 </body>
 </html>
