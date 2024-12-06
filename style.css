@@ -3,7 +3,7 @@
     transition: ease-in-out .15s;
   }
 
-  li {
+  .navv li {
     border-radius: 10px;
     background-color: rgb(244, 244, 244);
     margin-right: 15px;
@@ -11,7 +11,7 @@
     padding-right: 15px;
   }
 
-  li:hover {
+  .navv li:hover {
     background-color: rgb(207, 207, 207);
     transition-duration: 0.25s;
     transform: scale(1.07);
@@ -216,24 +216,35 @@
 
 
   @media (max-width: 1000px) {
+    header{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+    }
     .hero {
       display: flex;
       flex-direction: column-reverse;
       justify-content: center;
-      align-items: center;
+      align-items: start;
 
     }
 
     .calculator-container {
-      width: 80vw;
+      width: 90vw;
     }
 
     .txt {
       width: 80vw;
     }
 
-    .submitt {
+    .xyz {
       display: none;
+    }
+    .submitt {
+      margin-left: 20vw;
+      margin-right: 5vw;
+      width: 70px;
     }
 
     .emailbox {
@@ -261,3 +272,9 @@
       margin-left: 15vw;
     }
   }
+
+
+
+
+
+
