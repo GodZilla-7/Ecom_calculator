@@ -229,7 +229,8 @@
     }
 
     .txt {
-      width: 85vw;
+      width: 75vw;
+        padding-left: 10px;
     }
 
     .xyz, .submitt {
